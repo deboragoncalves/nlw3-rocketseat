@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    color: white;
+}
+
+/* Padrão: 16px. 62.5% = 10px */
+
+:root {
+    font-size: 62.5%;
+}
+
+/* Agrupar fontes.
+Rem: referente ao elemento root (html). 1.8 x 10 = 18px. */
+
+body, input, textarea, button {
+    font: 400 1.8rem/1 'Nunito', sans-serif;
+}
+
+
+
+/* Animações
+Nome: up
+Transform: translate Y: de baixo para cima. 
+Positivo: para baixo. Negativo: para cima. */
