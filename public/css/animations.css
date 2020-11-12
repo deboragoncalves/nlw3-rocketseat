@@ -15,6 +15,16 @@ Positivo: para baixo. Negativo: para cima. */
     }
 }
 
+@keyframes right {
+    from {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
 /* New class.
 Fill-mode: propriedades do to fiquem permanentes no elemento que contém a classe animate-up. */
 
@@ -22,4 +32,9 @@ Fill-mode: propriedades do to fiquem permanentes no elemento que contém a class
     animation-name: up;
     animation-duration: 300ms;
     animation-fill-mode: backwards;
+}
+
+.animate-right {
+    animation-name: right;
+    animation-duration: 300ms;
 }
