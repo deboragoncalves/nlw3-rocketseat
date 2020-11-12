@@ -3,15 +3,40 @@
     min-height: 100vh;
     text-align: center;
     display: flex;
-    align-items: center;
 }
 
+/* Quando chegar no limite (1120px), volta ao mínimo, 90%. */
+
 #container {
-    width: 90%;
+    margin: auto;
+    width: min(90%, 112rem);
 }
 
 .location, h1, .visit p {
     height: 16vh;
+}
+
+/* Delay */
+
+#logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 100ms
+}
+
+/* Clamp: mínimo, ideal e máximo.
+Toda a tela tem 100vh de height. 
+Font-size altera seu tamanho conforme o tamanho da tela. */
+
+main h1 {
+    animation-delay: 150ms;
+    font-size: clamp(4rem, 10vh, 8.4rem);
+}
+
+.visit p {
+    animation-delay: 200ms;
 }
 
 .visit a {
@@ -25,30 +50,64 @@
     justify-content: center;
     margin: 0 auto;
     transition: background 200ms;
+    animation-delay: 250ms;
 }
 
 .visit a:hover {
     background: #96feff;
 }
 
-/* Delay */
+/* Desktop */
 
-#logo {
-    animation-delay: 50ms;
-}
+@media (min-width: 760px) {
 
-.location {
-    animation-delay: 100ms
-}
+    /* Background: image repeat position/size; 
+    Background-position: eixo y, eixo x. Se for top o primeiro valor. 
+    Se for left/right, o primeiro será o eixo x.
+    Vw: se adapta à largura da tela. */
 
-main h1 {
-    animation-delay: 150ms;
-}
+    #container {
+        padding: 5rem 2rem;
+        background: url("../images/bg.svg") no-repeat 70% / clamp(30rem, 35vw, 56rem);
+    }
 
-.visit p {
-    animation-delay: 200ms;
-}
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.visit a {
-    animation-delay: 250ms;
+    .location, h1, .visit p {
+        height: initial;
+        text-align: initial;
+    }
+
+    .location {
+        text-align: right;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+
+    main h1 {
+        font-weight: bold;
+        line-height: .88;
+        margin: clamp(10%, 9vh, 12%) 0px 4rem;
+        width: min(300px, 80%)
+    }
+
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .visit p {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        width: clamp(20rem, 20vw, 30rem)
+    }
+
+    .visit a {
+        margin: initial;
+    }
 }
