@@ -1,4 +1,4 @@
-#pages-orphanages {
+#page-orphanages {
     width: 100%;
     height: 100%;
     display: flex;
@@ -30,10 +30,13 @@ aside footer p {
     margin-top: .8rem;
 }
 
+/* Z-index: eixo z (profundidade) */
+
 a.create-orphanage {
     position: absolute;
     right: 4rem;
     bottom: 4rem;
+    z-index: 1000000;
     width: 6.4rem;
     height: 6.4rem;
     background: #15C3D6;
@@ -47,4 +50,53 @@ a.create-orphanage {
 
 a.create-orphanage:hover {
     background: #17D6EB;
+}
+
+#mapid {
+    width: 100%;
+    height: 100%;
+}
+
+/* Rgba: valores de 0 a 255 (branco).
+Box-shadow: deslocamento do eixo x, deslocamento do eixo y, esfumaçar, cor.
+Wrapper: ao redor. Content: dentro */
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.leaflet-popup-content {
+    color: #0089A5;
+    margin: .8rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Botão.
+Transition: mudar a cor do background em 2s. */
+
+.leaflet-popup-content a {
+    width: 4rem;
+    height: 4rem;
+    background: #15C3D6;
+    box-shadow: 17.2828px 27.165px 41.48px rgba(23, 142, 166, 0.16);
+    border-radius: 12px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s;
+}
+
+.leaflet-popup-content a:hover {
+    background: #17D6EB;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
+
+.leaflet-container {
+    font: 600 2rem/1 'Nunito', sans-serif;
 }
