@@ -36,7 +36,7 @@ a.create-orphanage {
     position: absolute;
     right: 4rem;
     bottom: 4rem;
-    z-index: 1000000;
+    z-index: 1000;
     width: 6.4rem;
     height: 6.4rem;
     background: #15C3D6;
@@ -99,4 +99,5 @@ Transition: mudar a cor do background em 2s. */
 
 .leaflet-container {
     font: 600 2rem/1 'Nunito', sans-serif;
+    z-index: 5;
 }

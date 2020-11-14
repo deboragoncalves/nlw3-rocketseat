@@ -3,37 +3,6 @@
     min-height: 100vh;
 }
 
-aside.sidebar {
-    position: fixed;
-    height: 100%;
-    padding: 3.2rem 2.4rem;
-    background: #15C3D6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-aside.sidebar footer button {
-    width: 48px;
-    height: 48px;
-    border: none;
-    background: #12AFCB;
-    border-radius: 1.6rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s;
-}
-
-aside.sidebar footer button:hover {
-    background: #17d6EB;
-}
-
-.with-sidebar {
-    padding-left: 110px;
-}
-
 /* Flex: 1 - pegar o tamanho que resta e ajustar o conteúdo nele */
 
 main {
@@ -187,27 +156,4 @@ Column-gap: espaço entre as colunas. */
     border: 1px solid #a1e9c5;
     border-radius: 20px;
     color: #37C77F;
-}
-
-.primary-button {
-    margin-top: 6.4rem;
-    width: 100%;
-    height: 6.4rem;
-    border: 0;
-    cursor: pointer;
-    background: #3CDC8C;
-    border-radius: 2rem;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color .2s;
-}
-
-.primary-button:hover {
-    background: #36cf82;
-}
-
-.primary-button img {
-    margin-right: 1.6rem;
 }
