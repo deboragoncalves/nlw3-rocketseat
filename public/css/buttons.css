@@ -47,20 +47,3 @@
 .button-select button:last-child {
     border-radius: 0 2rem 2rem 0;
 }
-
-.new-upload {
-    position: relative;
-}
-
-.new-upload span {
-    position: absolute;
-    right: 12px;
-    bottom: 14px;
-    background: #ffffff;
-    border: 1px solid #D3E2E5;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: .6rem;
-    display: flex;
-    cursor: pointer;
-}
