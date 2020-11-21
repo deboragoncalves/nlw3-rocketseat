@@ -1,0 +1,24 @@
+{
+  "name": "nlw3-rocketseat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deboragoncalves/nlw3-rocketseat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deboragoncalves/nlw3-rocketseat/issues"
+  },
+  "homepage": "https://github.com/deboragoncalves/nlw3-rocketseat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
